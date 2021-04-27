@@ -1,0 +1,25 @@
+{% extends "basic.html" %}
+{% block css %}
+  <style>
+.imgg{
+    width: 100vh;
+    height: 50vh;
+    
+}
+  </style>
+{% endblock css %}
+{% block title %}
+vidscape - preview
+{% endblock title %}
+{% block body %}
+  
+
+<img src="{{thumbnail}}" alt="" id="imgg" class="mt-3" >
+<br>
+<h3>{{title}}</h3>
+<form action="/download_success/" method="POST">
+    {%csrf_token %}
+<input type="hidden" name="vidlink" value="{{link}}">
+<button>Download</button>
+</form>
+{% endblock body %}
