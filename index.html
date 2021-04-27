@@ -1,0 +1,30 @@
+{% extends "basic.html" %}
+{% block css %}
+  
+{% endblock css %}
+{% block title %}
+  Vidscape
+{% endblock title %}
+{% block body %}
+<div class="card text-center">
+   
+    <div class="card-body">
+        <form action="/download/" method="POST">
+            {% csrf_token %}
+     
+        <div class="mb-3">
+            
+            <input type="text" class="txtt" id="txtt" aria-describedby="txtHelp" placeholder="Enter link" name="dfile">
+            <div id="txtHelp" class="form-text">Enter a suitable link </div>
+          </div>
+        <button type="submit"  class="btn btn-dark">Preview</button>
+           </form>
+    </div>
+ 
+      
+    </div>
+  
+{% endblock body %}
+{% block js %}
+  
+{% endblock js %}
