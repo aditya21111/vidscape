@@ -27,7 +27,7 @@ SECRET_KEY = 'a**^vbd!l(r^=@k)n4had97rv8_b2z!o8-g(x7y4sryq+()va_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['vidscape.herokuapp.com','localhost']
 
 
 # Application definition
